@@ -1,0 +1,14 @@
+.formWrapper {
+  display: flex;
+}
+.plainDiv {
+  flex: 7;
+  background-color: #072a4b;
+  height: calc(100vh - 64px);
+}
+
+@media (max-width: 800px) {
+  .plainDiv {
+    display: none;
+  }
+}

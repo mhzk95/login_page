@@ -1,0 +1,40 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgb(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header > h3 {
+  color: #04223e;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+.header > h3 > span {
+  color: red;
+}
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+}
+.buttonGroup > button {
+  width: 160px;
+  border-radius: 4px;
+  font-size: 12px;
+  height: 40px;
+  font-weight: 500;
+}
+.buttonGroup > button:first-child {
+  background-color: #072a4b;
+  color: white;
+}
+.buttonGroup > button:last-child {
+  background-color: #fa8c16;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .buttonGroup > button {
+    display: none;
+  }
+}

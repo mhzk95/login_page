@@ -1,0 +1,72 @@
+.container {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+  font-weight: 900;
+  width: 65%;
+}
+.formContainer > h2 {
+  margin-bottom: 0;
+}
+.formContainer > span {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.formContainer > input {
+  margin: 10px 0 5px;
+}
+.errorMessage {
+  margin: 5px 0 10px !important;
+  text-align: left;
+  width: 100%;
+  color: rgb(190, 2, 2);
+}
+.successMessage {
+  margin: 5px 0 10px !important;
+  text-align: left;
+  width: 100%;
+  color: rgb(3, 122, 1);
+}
+
+.loginFormButton,
+.loginFormButton:hover,
+.loginFormButton:focus {
+  width: 100%;
+  background-color: #072a4b;
+  margin-top: 0;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.checkboxWrapper {
+  width: 100%;
+  margin-top: 5px;
+}
+.rememberMe {
+  float: left;
+  color: #072a4b;
+  font-weight: 400;
+}
+.forgotPassword,
+.forgotPassword:hover {
+  float: right;
+  color: #072a4b;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .formContainer {
+    width: 85%;
+  }
+}
